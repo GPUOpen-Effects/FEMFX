@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AMD_FEMFX", "..\..\amd_femfx\AMD_FEMFX_vs2019.vcxproj", "{EC54AEEA-58BF-6261-A1FD-13070DA740B6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FEMFXViewer", "FEMFXViewer_vs2019.vcxproj", "{ADA75063-195D-C958-A251-C32F0E06C05C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample_task_system", "..\sample_task_system\sample_task_system_vs2019.vcxproj", "{5D6F49C2-4953-0A18-B2B3-046B9EB6F499}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC54AEEA-58BF-6261-A1FD-13070DA740B6}.Debug|x64.ActiveCfg = Debug|x64
+		{EC54AEEA-58BF-6261-A1FD-13070DA740B6}.Debug|x64.Build.0 = Debug|x64
+		{EC54AEEA-58BF-6261-A1FD-13070DA740B6}.Release|x64.ActiveCfg = Release|x64
+		{EC54AEEA-58BF-6261-A1FD-13070DA740B6}.Release|x64.Build.0 = Release|x64
+		{ADA75063-195D-C958-A251-C32F0E06C05C}.Debug|x64.ActiveCfg = Debug|x64
+		{ADA75063-195D-C958-A251-C32F0E06C05C}.Debug|x64.Build.0 = Debug|x64
+		{ADA75063-195D-C958-A251-C32F0E06C05C}.Release|x64.ActiveCfg = Release|x64
+		{ADA75063-195D-C958-A251-C32F0E06C05C}.Release|x64.Build.0 = Release|x64
+		{5D6F49C2-4953-0A18-B2B3-046B9EB6F499}.Debug|x64.ActiveCfg = Debug|x64
+		{5D6F49C2-4953-0A18-B2B3-046B9EB6F499}.Debug|x64.Build.0 = Debug|x64
+		{5D6F49C2-4953-0A18-B2B3-046B9EB6F499}.Release|x64.ActiveCfg = Release|x64
+		{5D6F49C2-4953-0A18-B2B3-046B9EB6F499}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

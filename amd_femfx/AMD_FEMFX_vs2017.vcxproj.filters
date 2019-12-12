@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{1F80880B-8B89-887C-1405-9F7C800D947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Vectormath">
+      <UniqueIdentifier>{2B3F6D79-170D-617F-00A1-D1A5EC0D3DE4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bvh">
+      <UniqueIdentifier>{DC672FA9-4847-AE44-515F-391BBDBD14A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Common">
+      <UniqueIdentifier>{C5C39D09-B17B-DF56-1A83-B8B2065A7A47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ConstraintSolver">
+      <UniqueIdentifier>{1C785D50-0807-E719-B125-FB149D93F7BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\FindContacts">
+      <UniqueIdentifier>{3C4F38FD-2848-574F-517A-3CD43DD2365B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PrimitiveCollision">
+      <UniqueIdentifier>{81E70E7C-6DE1-37CE-564E-CEDE42E79D3A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene">
+      <UniqueIdentifier>{0A06D2B3-7670-862A-BFAE-37D02B58647F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Simulation">
+      <UniqueIdentifier>{41219B4C-2DEF-8E52-1683-FF7802F06AB7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SparseSolvers">
+      <UniqueIdentifier>{98E021E9-04F7-1F7F-4D6E-ABA0B9C3F006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Threading">
+      <UniqueIdentifier>{B27D869F-1E3E-02D6-E778-4B5353F846B2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\AMD_FEMFX.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FEMFXArray.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FEMFXCommon.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FEMFXRigidBodyState.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FEMFXSerialize.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FEMFXTaskSystemInterface.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FEMFXTetMaterialParams.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FEMFXTetMeshConnectivity.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FEMFXTypes.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\FEMFXVectorMath.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\avx_mathfun.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\mat_aos.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\quat_aos.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\simd_bool.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\simd_float.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\simd_mat_aos.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\simd_quat_aos.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\simd_utils.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\simd_vec_aos.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\simd_vectormath_aos.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\soa_bool.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\soa_float.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\soa_int.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\soa_mat.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\soa_quat.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\soa_uint.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\soa_vec.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\soa_vectormath.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\sse_mathfun.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\vec_aos.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\vectormath_aos.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vectormath\vectormath_utils.h">
+      <Filter>inc\Vectormath</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bvh\FEMFXBvh.h">
+      <Filter>src\Bvh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bvh\FEMFXBvhBuild.h">
+      <Filter>src\Bvh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bvh\FEMFXBvhCollision.h">
+      <Filter>src\Bvh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\FEMFXAtomicOps.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\FEMFXCommonInternal.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\FEMFXFreeIds.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\FEMFXHashSet.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\FEMFXInternal.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\FEMFXRandom.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\FEMFXSoaSvd3x3.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\FEMFXSoaTetMath.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\FEMFXSort.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\FEMFXSvd3x3.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\FEMFXTetMath.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConstraintSolver\FEMFXConstraintIslands.h">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConstraintSolver\FEMFXConstraintSolveTaskGraph.h">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConstraintSolver\FEMFXConstraintSolver.h">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConstraintSolver\FEMFXConstraints.h">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConstraintSolver\FEMFXConstraintsBuffer.h">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConstraintSolver\FEMFXGraphColoring.h">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConstraintSolver\FEMFXPartitioning.h">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConstraintSolver\FEMFXUserConstraints.h">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FindContacts\FEMFXBroadPhase.h">
+      <Filter>src\FindContacts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FindContacts\FEMFXCollisionPairData.h">
+      <Filter>src\FindContacts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FindContacts\FEMFXFindContacts.h">
+      <Filter>src\FindContacts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PrimitiveCollision\FEMFXAabb.h">
+      <Filter>src\PrimitiveCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PrimitiveCollision\FEMFXBoxCcd.h">
+      <Filter>src\PrimitiveCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PrimitiveCollision\FEMFXFeaturePairDistance.h">
+      <Filter>src\PrimitiveCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PrimitiveCollision\FEMFXSoaFeaturePairDistance.h">
+      <Filter>src\PrimitiveCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PrimitiveCollision\FEMFXSoaTriCcd.h">
+      <Filter>src\PrimitiveCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PrimitiveCollision\FEMFXSoaTriIntersection.h">
+      <Filter>src\PrimitiveCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PrimitiveCollision\FEMFXTriCcd.h">
+      <Filter>src\PrimitiveCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PrimitiveCollision\FEMFXTriIntersection.h">
+      <Filter>src\PrimitiveCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\FEMFXMeshCreation.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\FEMFXScene.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\FEMFXThreadTempMemory.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulation\FEMFXFracture.h">
+      <Filter>src\Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulation\FEMFXRigidBody.h">
+      <Filter>src\Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulation\FEMFXSleeping.h">
+      <Filter>src\Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulation\FEMFXTetMesh.h">
+      <Filter>src\Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulation\FEMFXUpdateTetState.h">
+      <Filter>src\Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulation\FEMFXVelStats.h">
+      <Filter>src\Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SparseSolvers\FEMFXGsSolver.h">
+      <Filter>src\SparseSolvers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SparseSolvers\FEMFXMpcgSolver.h">
+      <Filter>src\SparseSolvers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SparseSolvers\FEMFXMpcgSolverSetup.h">
+      <Filter>src\SparseSolvers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SparseSolvers\FEMFXSolverMath.h">
+      <Filter>src\SparseSolvers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Threading\FEMFXAsyncThreading.h">
+      <Filter>src\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Threading\FEMFXParallelFor.h">
+      <Filter>src\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Threading\FEMFXTaskGraph.h">
+      <Filter>src\Threading</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Bvh\FEMFXBvhBuild.cpp">
+      <Filter>src\Bvh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bvh\FEMFXBvhCollision.cpp">
+      <Filter>src\Bvh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\FEMFXAtomicOps.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\FEMFXSvd3x3.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\FEMFXTetMath.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\qsort_permutation.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\qsort_userdata.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConstraintSolver\FEMFXConstraintIslands.cpp">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConstraintSolver\FEMFXConstraintSolveTaskGraph.cpp">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConstraintSolver\FEMFXConstraintSolver.cpp">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConstraintSolver\FEMFXConstraintSolverSetup.cpp">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConstraintSolver\FEMFXConstraintsBuffer.cpp">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConstraintSolver\FEMFXGraphColoring.cpp">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConstraintSolver\FEMFXPartitioning.cpp">
+      <Filter>src\ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FindContacts\FEMFXBroadPhase.cpp">
+      <Filter>src\FindContacts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FindContacts\FEMFXFindContacts.cpp">
+      <Filter>src\FindContacts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FindContacts\FEMFXFindContactsRb.cpp">
+      <Filter>src\FindContacts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FindContacts\FEMFXMeshCollision.cpp">
+      <Filter>src\FindContacts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FindContacts\FEMFXSelfCollision.cpp">
+      <Filter>src\FindContacts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PrimitiveCollision\FEMFXAabbCollision.cpp">
+      <Filter>src\PrimitiveCollision</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PrimitiveCollision\FEMFXBoxCcd.cpp">
+      <Filter>src\PrimitiveCollision</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PrimitiveCollision\FEMFXTriCcd.cpp">
+      <Filter>src\PrimitiveCollision</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PrimitiveCollision\FEMFXTriIntersection.cpp">
+      <Filter>src\PrimitiveCollision</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\FEMFXMeshCreation.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\FEMFXScene.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\FEMFXSerialize.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\FEMFXThreadTempMemory.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulation\FEMFXDeformationConstraints.cpp">
+      <Filter>src\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulation\FEMFXFracture.cpp">
+      <Filter>src\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulation\FEMFXMeshConnectedComponents.cpp">
+      <Filter>src\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulation\FEMFXRigidBody.cpp">
+      <Filter>src\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulation\FEMFXSimulate.cpp">
+      <Filter>src\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulation\FEMFXSleeping.cpp">
+      <Filter>src\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulation\FEMFXTetMesh.cpp">
+      <Filter>src\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulation\FEMFXUpdateTetState.cpp">
+      <Filter>src\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SparseSolvers\FEMFXConditionCheck.cpp">
+      <Filter>src\SparseSolvers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SparseSolvers\FEMFXGsSolver.cpp">
+      <Filter>src\SparseSolvers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SparseSolvers\FEMFXMpcgSolver.cpp">
+      <Filter>src\SparseSolvers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SparseSolvers\FEMFXMpcgSolverSetup.cpp">
+      <Filter>src\SparseSolvers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Threading\FEMFXParallelFor.cpp">
+      <Filter>src\Threading</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

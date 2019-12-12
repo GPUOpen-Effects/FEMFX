@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EC54AEEA-58BF-6261-A1FD-13070DA740B6}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AMD_FEMFX</RootNamespace>
+    <ProjectName>AMD_FEMFX</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>lib\</OutDir>
+    <IntDir>obj\vs2017\x86_64\x64\Debug\</IntDir>
+    <TargetName>AMD_FEMFX_d</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>lib\</OutDir>
+    <IntDir>obj\vs2017\x86_64\x64\Release\</IntDir>
+    <TargetName>AMD_FEMFX</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NOMINMAX;_DEBUG;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>inc;inc\Vectormath;..\external\trace;src\Bvh;src\Common;src\ConstraintSolver;src\FindContacts;src\PrimitiveCollision;src\Scene;src\Simulation;src\SparseSolvers;src\Threading;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NOMINMAX;NDEBUG;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>inc;inc\Vectormath;..\external\trace;src\Bvh;src\Common;src\ConstraintSolver;src\FindContacts;src\PrimitiveCollision;src\Scene;src\Simulation;src\SparseSolvers;src\Threading;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\AMD_FEMFX.h" />
+    <ClInclude Include="inc\FEMFXArray.h" />
+    <ClInclude Include="inc\FEMFXCommon.h" />
+    <ClInclude Include="inc\FEMFXRigidBodyState.h" />
+    <ClInclude Include="inc\FEMFXSerialize.h" />
+    <ClInclude Include="inc\FEMFXTaskSystemInterface.h" />
+    <ClInclude Include="inc\FEMFXTetMaterialParams.h" />
+    <ClInclude Include="inc\FEMFXTetMeshConnectivity.h" />
+    <ClInclude Include="inc\FEMFXTypes.h" />
+    <ClInclude Include="inc\Vectormath\FEMFXVectorMath.h" />
+    <ClInclude Include="inc\Vectormath\avx_mathfun.h" />
+    <ClInclude Include="inc\Vectormath\mat_aos.h" />
+    <ClInclude Include="inc\Vectormath\quat_aos.h" />
+    <ClInclude Include="inc\Vectormath\simd_bool.h" />
+    <ClInclude Include="inc\Vectormath\simd_float.h" />
+    <ClInclude Include="inc\Vectormath\simd_mat_aos.h" />
+    <ClInclude Include="inc\Vectormath\simd_quat_aos.h" />
+    <ClInclude Include="inc\Vectormath\simd_utils.h" />
+    <ClInclude Include="inc\Vectormath\simd_vec_aos.h" />
+    <ClInclude Include="inc\Vectormath\simd_vectormath_aos.h" />
+    <ClInclude Include="inc\Vectormath\soa_bool.h" />
+    <ClInclude Include="inc\Vectormath\soa_float.h" />
+    <ClInclude Include="inc\Vectormath\soa_int.h" />
+    <ClInclude Include="inc\Vectormath\soa_mat.h" />
+    <ClInclude Include="inc\Vectormath\soa_quat.h" />
+    <ClInclude Include="inc\Vectormath\soa_uint.h" />
+    <ClInclude Include="inc\Vectormath\soa_vec.h" />
+    <ClInclude Include="inc\Vectormath\soa_vectormath.h" />
+    <ClInclude Include="inc\Vectormath\sse_mathfun.h" />
+    <ClInclude Include="inc\Vectormath\vec_aos.h" />
+    <ClInclude Include="inc\Vectormath\vectormath_aos.h" />
+    <ClInclude Include="inc\Vectormath\vectormath_utils.h" />
+    <ClInclude Include="src\Bvh\FEMFXBvh.h" />
+    <ClInclude Include="src\Bvh\FEMFXBvhBuild.h" />
+    <ClInclude Include="src\Bvh\FEMFXBvhCollision.h" />
+    <ClInclude Include="src\Common\FEMFXAtomicOps.h" />
+    <ClInclude Include="src\Common\FEMFXCommonInternal.h" />
+    <ClInclude Include="src\Common\FEMFXFreeIds.h" />
+    <ClInclude Include="src\Common\FEMFXHashSet.h" />
+    <ClInclude Include="src\Common\FEMFXInternal.h" />
+    <ClInclude Include="src\Common\FEMFXRandom.h" />
+    <ClInclude Include="src\Common\FEMFXSoaSvd3x3.h" />
+    <ClInclude Include="src\Common\FEMFXSoaTetMath.h" />
+    <ClInclude Include="src\Common\FEMFXSort.h" />
+    <ClInclude Include="src\Common\FEMFXSvd3x3.h" />
+    <ClInclude Include="src\Common\FEMFXTetMath.h" />
+    <ClInclude Include="src\ConstraintSolver\FEMFXConstraintIslands.h" />
+    <ClInclude Include="src\ConstraintSolver\FEMFXConstraintSolveTaskGraph.h" />
+    <ClInclude Include="src\ConstraintSolver\FEMFXConstraintSolver.h" />
+    <ClInclude Include="src\ConstraintSolver\FEMFXConstraints.h" />
+    <ClInclude Include="src\ConstraintSolver\FEMFXConstraintsBuffer.h" />
+    <ClInclude Include="src\ConstraintSolver\FEMFXGraphColoring.h" />
+    <ClInclude Include="src\ConstraintSolver\FEMFXPartitioning.h" />
+    <ClInclude Include="src\ConstraintSolver\FEMFXUserConstraints.h" />
+    <ClInclude Include="src\FindContacts\FEMFXBroadPhase.h" />
+    <ClInclude Include="src\FindContacts\FEMFXCollisionPairData.h" />
+    <ClInclude Include="src\FindContacts\FEMFXFindContacts.h" />
+    <ClInclude Include="src\PrimitiveCollision\FEMFXAabb.h" />
+    <ClInclude Include="src\PrimitiveCollision\FEMFXBoxCcd.h" />
+    <ClInclude Include="src\PrimitiveCollision\FEMFXFeaturePairDistance.h" />
+    <ClInclude Include="src\PrimitiveCollision\FEMFXSoaFeaturePairDistance.h" />
+    <ClInclude Include="src\PrimitiveCollision\FEMFXSoaTriCcd.h" />
+    <ClInclude Include="src\PrimitiveCollision\FEMFXSoaTriIntersection.h" />
+    <ClInclude Include="src\PrimitiveCollision\FEMFXTriCcd.h" />
+    <ClInclude Include="src\PrimitiveCollision\FEMFXTriIntersection.h" />
+    <ClInclude Include="src\Scene\FEMFXMeshCreation.h" />
+    <ClInclude Include="src\Scene\FEMFXScene.h" />
+    <ClInclude Include="src\Scene\FEMFXThreadTempMemory.h" />
+    <ClInclude Include="src\Simulation\FEMFXFracture.h" />
+    <ClInclude Include="src\Simulation\FEMFXRigidBody.h" />
+    <ClInclude Include="src\Simulation\FEMFXSleeping.h" />
+    <ClInclude Include="src\Simulation\FEMFXTetMesh.h" />
+    <ClInclude Include="src\Simulation\FEMFXUpdateTetState.h" />
+    <ClInclude Include="src\Simulation\FEMFXVelStats.h" />
+    <ClInclude Include="src\SparseSolvers\FEMFXGsSolver.h" />
+    <ClInclude Include="src\SparseSolvers\FEMFXMpcgSolver.h" />
+    <ClInclude Include="src\SparseSolvers\FEMFXMpcgSolverSetup.h" />
+    <ClInclude Include="src\SparseSolvers\FEMFXSolverMath.h" />
+    <ClInclude Include="src\Threading\FEMFXAsyncThreading.h" />
+    <ClInclude Include="src\Threading\FEMFXParallelFor.h" />
+    <ClInclude Include="src\Threading\FEMFXTaskGraph.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Bvh\FEMFXBvhBuild.cpp" />
+    <ClCompile Include="src\Bvh\FEMFXBvhCollision.cpp" />
+    <ClCompile Include="src\Common\FEMFXAtomicOps.cpp" />
+    <ClCompile Include="src\Common\FEMFXSvd3x3.cpp" />
+    <ClCompile Include="src\Common\FEMFXTetMath.cpp" />
+    <ClCompile Include="src\Common\qsort_permutation.cpp" />
+    <ClCompile Include="src\Common\qsort_userdata.cpp" />
+    <ClCompile Include="src\ConstraintSolver\FEMFXConstraintIslands.cpp" />
+    <ClCompile Include="src\ConstraintSolver\FEMFXConstraintSolveTaskGraph.cpp" />
+    <ClCompile Include="src\ConstraintSolver\FEMFXConstraintSolver.cpp" />
+    <ClCompile Include="src\ConstraintSolver\FEMFXConstraintSolverSetup.cpp" />
+    <ClCompile Include="src\ConstraintSolver\FEMFXConstraintsBuffer.cpp" />
+    <ClCompile Include="src\ConstraintSolver\FEMFXGraphColoring.cpp" />
+    <ClCompile Include="src\ConstraintSolver\FEMFXPartitioning.cpp" />
+    <ClCompile Include="src\FindContacts\FEMFXBroadPhase.cpp" />
+    <ClCompile Include="src\FindContacts\FEMFXFindContacts.cpp" />
+    <ClCompile Include="src\FindContacts\FEMFXFindContactsRb.cpp" />
+    <ClCompile Include="src\FindContacts\FEMFXMeshCollision.cpp" />
+    <ClCompile Include="src\FindContacts\FEMFXSelfCollision.cpp" />
+    <ClCompile Include="src\PrimitiveCollision\FEMFXAabbCollision.cpp" />
+    <ClCompile Include="src\PrimitiveCollision\FEMFXBoxCcd.cpp" />
+    <ClCompile Include="src\PrimitiveCollision\FEMFXTriCcd.cpp" />
+    <ClCompile Include="src\PrimitiveCollision\FEMFXTriIntersection.cpp" />
+    <ClCompile Include="src\Scene\FEMFXMeshCreation.cpp" />
+    <ClCompile Include="src\Scene\FEMFXScene.cpp" />
+    <ClCompile Include="src\Scene\FEMFXSerialize.cpp" />
+    <ClCompile Include="src\Scene\FEMFXThreadTempMemory.cpp" />
+    <ClCompile Include="src\Simulation\FEMFXDeformationConstraints.cpp" />
+    <ClCompile Include="src\Simulation\FEMFXFracture.cpp" />
+    <ClCompile Include="src\Simulation\FEMFXMeshConnectedComponents.cpp" />
+    <ClCompile Include="src\Simulation\FEMFXRigidBody.cpp" />
+    <ClCompile Include="src\Simulation\FEMFXSimulate.cpp" />
+    <ClCompile Include="src\Simulation\FEMFXSleeping.cpp" />
+    <ClCompile Include="src\Simulation\FEMFXTetMesh.cpp" />
+    <ClCompile Include="src\Simulation\FEMFXUpdateTetState.cpp" />
+    <ClCompile Include="src\SparseSolvers\FEMFXConditionCheck.cpp" />
+    <ClCompile Include="src\SparseSolvers\FEMFXGsSolver.cpp" />
+    <ClCompile Include="src\SparseSolvers\FEMFXMpcgSolver.cpp" />
+    <ClCompile Include="src\SparseSolvers\FEMFXMpcgSolverSetup.cpp" />
+    <ClCompile Include="src\Threading\FEMFXParallelFor.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
