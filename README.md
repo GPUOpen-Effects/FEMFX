@@ -29,10 +29,10 @@ Included in this release
 * Sample threading utilities
 * A basic graphical sample
 
-In a separate release, we provide a plugin for Unreal Engine and a demo that 
-demonstrates more advanced rendering of FEM objects:
-https://github.com/GPUOpenSoftware/UnrealEngine/tree/FEMFX-4.18
-(This link will only work for those with access permissions to the UE4 repository.)
+In a separate release, we provide a plugin for Unreal Engine that
+demonstrates more advanced rendering of FEM objects. Instructions for access are here: https://github.com/GPUOpen-LibrariesAndSDKs/GameEngineIntegrations
+* Plugin: https://github.com/GPUOpenSoftware/UnrealEngine/tree/FEMFX-4.18
+* Demo: https://github.com/GPUOpenSoftware/UnrealEngine/tree/FEMFX-AlienPods
 
 Dependencies
 The sample code has some dependencies on external frameworks which must be 
