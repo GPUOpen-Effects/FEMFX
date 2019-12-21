@@ -1564,6 +1564,11 @@ static void ErrorCallback(int error, const char* description)
     fprintf(stderr, "Error: (%x) %s\n", error, description);
 }
 
+static void WindowSizeCallback(GLFWwindow*, int width, int height)
+{
+    glViewport(0, 0, width, height);
+}
+
 #if !PERF_TEST
 static FM_FORCE_INLINE double GetTime()
 {
@@ -1752,6 +1757,7 @@ int __cdecl main(int argc, char *argv[])
     glfwSetMouseButtonCallback(window, MouseButtonCallback);
     glfwSetCursorPosCallback(window, CursorPositionCallback);
     glfwSetErrorCallback(ErrorCallback);
+    glfwSetWindowSizeCallback(window, WindowSizeCallback);
 
     glfwMakeContextCurrent(window);
     glfwSwapInterval(0);
